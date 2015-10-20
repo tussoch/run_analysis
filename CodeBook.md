@@ -28,10 +28,12 @@ A major requirement of the assignment was to provide **Descriptive** variable na
 A modified description of the features based on the initial researchers text (see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) follows:
 "The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals" (timeacc x, y and z and timegyro x, y and z)."
 
+All measuremnts were been normalised by the original researchers.
+
 Time domain signals are prefixed with 'time' were captured at a constant rate of 50 Hz. "Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals."
 timebodyaccel x, y and z and timegravityaccel x, y, and z) were measured using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
 
-"Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals..." (timebodyacceljerk X,Y Z and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm..." (timebodyaccelmag, timegravityaccelmag, timebodyacceljerkmag, timebodygyromag, timebodygyrojerkmag). 
+"Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals..." (timebodyacceljerk x, y, and z, and timebodygyrojerk x, y, and z). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm..." (timebodyaccelmag, timegravityaccelmag, timebodyacceljerkmag, timebodygyromag, timebodygyrojerkmag). 
 
 "Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing..." frequencybodyacc x, y and z, frequencybodyacceljerk x, y and z, frequencybodyacceljerkmag, frequencybodygyromag, frequencybodygyrojerkmag. (Note 'frequency' prefix indicates frequency domain signals). 
 
@@ -41,7 +43,7 @@ All values presented are the means based on subject and activity. Some of the su
 
 "Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:" and are indicated by an "angle" prefix. These are the last seven variables listed below.
 
-A full list is features resented is thus:
+A full list of features presented is thus:
 
 timebodyaccelmeanx
 timebodyaccelmeany

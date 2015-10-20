@@ -43,4 +43,5 @@ names(mean.sd.body.df) <- gsub("bodybody", "body", names(mean.sd.body.df))
 library(plyr)
 run_analysis.df <- ddply(mean.sd.body.df, .(subjectid, activity),
                          numcolwise(mean))
+# Write output table NOTE: Wide format as presented is specifically allowed
 write.table(run_analysis.df, "run_analysis.txt", row.names = FALSE)
