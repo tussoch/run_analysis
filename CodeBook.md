@@ -28,7 +28,7 @@ A major requirement of the assignment was to provide **Descriptive** variable na
 A modified description of the features based on the initial researchers text (see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) follows:
 "The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals" (timeacc x, y and z and timegyro x, y and z)."
 
-All measuremnts were been normalised by the original researchers.
+All measurements were been normalised by the original researchers.
 
 Time domain signals are prefixed with 'time' were captured at a constant rate of 50 Hz. "Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals."
 timebodyaccel x, y and z and timegravityaccel x, y, and z) were measured using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
