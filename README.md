@@ -2,6 +2,13 @@
 
 Tidying data for Human Activity Recognition by Smartphone data (Course Project - Getting and Cleaning Data). Wide format as presented is specifically allowed.
 
+HOW TO LOAD OUTPUT TABLE OF DATA
+You can open the link with read.table or use the code below (modified from David Hood at https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/)
+'''address <- "https://s3.amazonaws.com/coursera-uploads/user-6805cb25b9904c7602acaf9f/975117/asst-3/70dfa760729411e59aa10b716cda831a.txt"
+address <- sub("^https", "http", address)
+samsung.data <- read.table(url(address), header = TRUE)
+View(samsung.data)''' 
+
 run_analysis works with data from the Human Activity Recognition research based on using Smartphone data.
 
 This project fulfills the requirements for the Course Project in Getting and Cleaning Data.
